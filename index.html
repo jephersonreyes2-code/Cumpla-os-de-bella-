@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff4f5">
+    <meta name="description" content="Una sorpresa especial para celebrar un cumpleaños.">
+    <title>Feliz cumpleaños 🎂</title>
+    <link rel="stylesheet" href="cumple.css">
+    <script src="cumple.js" defer></script>
+</head>
+<body>
+    <main class="birthday-page">
+        <header class="intro">
+            <p class="eyebrow">Hoy celebramos a alguien muy especial</p>
+            <h1>¡Feliz cumpleaños! <span aria-hidden="true">🎂</span></h1>
+            <p class="intro-copy">Que tu día esté lleno de momentos bonitos, sonrisas y mucho cariño.</p>
+            <button class="surprise-button" id="surprise-button" type="button" aria-expanded="false" aria-controls="birthday-message">
+                Has click aqui para una sorpresa ✨
+            </button>
+            <p class="birthday-message" id="birthday-message" hidden>
+                ¡Espero que este nuevo año le regale todo lo lindo que se merece! 💖
+            </p>
+        </header>
+
+        <section class="memories" aria-labelledby="memories-title">
+            <div class="section-heading">
+                <p class="eyebrow">Unas cuantas razones para sonreír</p>
+                <h2 id="memories-title">Pequeños recuerdos, mucho cariño</h2>
+               
+            </div>
+
+            <div class="memory-grid">
+                <article class="memory-card">
+                    <button class="photo-frame" type="button" aria-label="Abrir la sorpresa del primer recuerdo" aria-expanded="false" aria-controls="memory-message-1">
+                        <span class="photo-placeholder" aria-hidden="true">📷</span>
+                        <img class="memory-photo" data-photo="img3.jpeg" alt="Recuerdo especial número uno" hidden>
+                        <span class="photo-caption">Un recuerdo bonito</span>
+                    </button>
+                    <div class="memory-message" id="memory-message-1" hidden>
+                        <p class="message-label">Un deseo para ti</p>
+                        <h3>Que nunca le falten motivos para reír</h3>
+                        <p>Que esa sonrisa nunca desaparezca por que alegra las mañanas mas oscuras. 😊</p>
+                        <img class="revealed-photo" alt="Foto sorpresa del primer recuerdo" hidden>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <button class="photo-frame" type="button" aria-label="Abrir la sorpresa del segundo recuerdo" aria-expanded="false" aria-controls="memory-message-2">
+                        <span class="photo-placeholder" aria-hidden="true">🌷</span>
+                        <img class="memory-photo" data-photo="img1.jpeg" alt="Recuerdo especial número dos" hidden>
+                        <span class="photo-caption">Un momento especial</span>
+                    </button>
+                    <div class="memory-message" id="memory-message-2" hidden>
+                        <p class="message-label">Algo que quiero recordarte</p>
+                        <h3>Hace especial a la gente que la rodea</h3>
+                        <p>Gracias por compartir su forma tan bonita de ser. 🌟</p>
+                        <img class="revealed-photo" alt="Foto sorpresa del segundo recuerdo" hidden>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <button class="photo-frame" type="button" aria-label="Abrir la sorpresa del tercer recuerdo" aria-expanded="false" aria-controls="memory-message-3">
+                        <span class="photo-placeholder" aria-hidden="true">💝</span>
+                        <img class="memory-photo" data-photo="img2.jpeg" alt="Recuerdo especial número tres" hidden>
+                        <span class="photo-caption">Un deseo de cumpleaños</span>
+                    </button>
+                    <div class="memory-message" id="memory-message-3" hidden>
+                        <p class="message-label">Para este nuevo año</p>
+                        <h3>Que se cumplan todos los sueños que guarda </h3>
+                        <p>Hoy y siempre, se mereces cosas maravillosas. 🎉</p>
+                        <img class="revealed-photo" alt="Foto sorpresa del tercer recuerdo" hidden>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="closing-note">
+            <p>El cafe queda pendiente pero no las ganas de darle un detalle :) <span aria-hidden="true">💕</span></p>
+        </footer>
+    </main>
+</body>
+</html>
